@@ -1,0 +1,50 @@
+.Button {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 19px 50px;
+    outline: none;
+    transition: all .4s;
+
+}
+
+.Link_Button {
+    background-color: transparent;
+    border: 2px solid #A259FF;
+
+    i {
+        color: #A259FF;
+        font-size: 17px;
+    }
+
+    &:hover {
+        background-color: #A259FF;
+        cursor: pointer;
+
+        p {
+            color: #fff !important;
+        }
+
+        i {
+            color: #fff !important;
+
+        }
+    }
+}
+
+.Simple_Button {
+    background-color: #A259FF;
+    border: none;
+
+    i {
+        color: #fff !important;
+        font-size: 17px;
+    }
+
+    &:hover {
+        background-color: #a159ff9e;
+        cursor: pointer;
+    }
+}
