@@ -1,14 +1,12 @@
-import Button from "./components/Button";
-import Container from "./components/Container";
+import Layout from "./components/Layout";
+import Home from "./routes/Home";
 
 function App() {
   return (
     <>
-      <Container>
-        <Button type="link" icon="fa-solid fa-rocket">
-          click me
-        </Button>
-      </Container>
+      <Layout>
+        <Home />
+      </Layout>
     </>
   );
 }

@@ -1,8 +1,9 @@
+import clsx from "clsx";
 import cn from "./style.module.scss";
 
 const Container = (props) => {
-  const { children } = props;
-  return <div className={cn.Container}>{children}</div>;
+  const { children, className } = props;
+  return <div className={clsx(cn.Container, className)}>{children}</div>;
 };
 
 export default Container;
