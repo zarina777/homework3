@@ -1,38 +1,50 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import clsx from "clsx";
-import { Link } from "react-router-dom";
+import { P } from "../../Typography";
 import Container from "../../Container";
 import Button from "../../Button";
 import Logo from "../Logo";
+import Cover from "../../BgCover";
 import cn from "./style.module.scss";
-import { P } from "../../Typography";
 
 function Navbar() {
+  let [bar, openSideBar] = useState(false);
+  function closeSideBar() {
+    openSideBar(false);
+  }
   return (
     <div className={clsx(cn.Navbar)}>
       <Container className={cn.Container}>
         <Logo />
-        <ul>
+        <ul style={bar ? { right: "0" } : { right: "-100%" }}>
           <li>
-            <Link to="marketplace">
+            <NavLink to="/">
               <P>Marketplace</P>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="rankings">
+            <NavLink to="rankings">
               <P>Rankings</P>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="wallet">
+            <NavLink to="connection">
               <P>Connect a wallet</P>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Button className={cn.btn} icon="fa-solid fa-rocket">
+            <Button color="red" sidepadding="30" icon="fa-solid fa-rocket">
               Sign Up
             </Button>
           </li>
         </ul>
+        <i
+          onClick={openSideBar}
+          id={cn.Bar}
+          className="fa-solid fa-bars-staggered"
+        ></i>
+        <Cover onFunc={closeSideBar} dblock={bar ? true : false} />
       </Container>
     </div>
   );
