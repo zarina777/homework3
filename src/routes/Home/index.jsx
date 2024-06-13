@@ -1,13 +1,6 @@
-import Card1 from "../../components/Card/types/Card1";
-import Container from "../../components/Container";
-import cn from './style.module.scss'
+import Section1 from "./components/Section1";
 function Home() {
-  return (
-    <Container className={cn.container}>
-      <Card1 imgSrc='cosmos.png' title='Space Walking' subtitle='Animakid' circleImgSrc='cosmos.png' />
-
-    </Container>
-  );
+  return <Section1 />;
 }
 
 export default Home;

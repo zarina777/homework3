@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import cn from "./style.module.scss";
 function H1(props) {
-  const { children, className, fontFamily } = props;
+  const { children, className, fontFamily = "work" } = props;
   return (
     <h1
       className={clsx(
