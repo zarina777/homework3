@@ -5,11 +5,39 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     justify-content: center;
+    align-items: flex-start;
+    @media (max-width: 924px) {
+      align-items: center;
+    }
+    @media (max-width: 890px) {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
     .info {
       display: flex;
       flex-direction: column;
       gap: 30px;
       align-items: flex-start;
+      @media (max-width: 890px) {
+        align-items: center;
+        .h1 {
+          text-align: center;
+        }
+        .h5 {
+          text-align: center;
+        }
+      }
+
+      .sales {
+        display: flex;
+        gap: 30px;
+      }
+    }
+    .card {
+      height: 500px;
+      @media (max-width: 924px) {
+        height: 450px;
+      }
     }
   }
 }

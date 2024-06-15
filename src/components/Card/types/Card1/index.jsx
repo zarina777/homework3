@@ -4,17 +4,19 @@ import Img from "../../components/Img";
 import Text from "../../components/Text";
 import cn from "./style.module.scss";
 import { H5, P } from "../../../Typography";
+import clsx from "clsx";
+import ImgC from "../../components/CircleImg";
 
 function Card1(props) {
-  const { imgSrc, title, circleImgSrc, subtitle } = props;
+  const { className, imgSrc, title, circleImgSrc, subtitle } = props;
   return (
-    <Box className={cn.Card1}>
+    <Box className={clsx(cn.Card1, className)}>
       <Img src={imgSrc} />
       <Text className={cn.wrap}>
         <H5>{title}</H5>
         <div className={cn.Info}>
-          <Img width='24' src={circleImgSrc} type='circle' />
-          <P fontweight='400'>{subtitle}</P>
+          <ImgC width="24" src={circleImgSrc} />
+          <P fontweight="400">{subtitle}</P>
         </div>
       </Text>
     </Box>

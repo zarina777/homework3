@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import cn from "./style.module.scss";
-function H3(props) {
+function H5(props) {
   const {
     fontweight = "700",
     children,
@@ -8,17 +8,17 @@ function H3(props) {
     fontFamily = "work",
   } = props;
   return (
-    <h3
+    <h4
       style={{ fontWeight: fontweight }}
       className={clsx(
-        cn.h3,
+        cn.h4,
         fontFamily == "mono" ? cn.mono : fontFamily == "work" ? cn.work : "",
         className
       )}
     >
       {children}
-    </h3>
+    </h4>
   );
 }
 
-export default H3;
+export default H5;

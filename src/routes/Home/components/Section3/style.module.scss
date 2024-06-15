@@ -1,0 +1,20 @@
+.section {
+  padding: 50px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .card_wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

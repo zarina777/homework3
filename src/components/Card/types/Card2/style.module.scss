@@ -1,0 +1,20 @@
+.card {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .img_warp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    img {
+      &:first-child {
+        grid-column: 1/4;
+      }
+    }
+  }
+  .small_info {
+    display: flex;
+    gap: 12px;
+  }
+}
