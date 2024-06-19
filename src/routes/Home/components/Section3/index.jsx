@@ -1,8 +1,8 @@
 import Container from "../../../../components/Container";
 import Heading from "../components/Heading";
 import Button from "../../../../components/Button";
-import cn from "./style.module.scss";
 import Card3 from "../../../../components/Card/types/Card3";
+import cn from "./style.module.scss";
 
 function Section3() {
   return (
@@ -13,7 +13,7 @@ function Section3() {
             heading="Top creators"
             subheading="Checkout Top Rated Creators on the NFT Marketplace"
           />
-          <Button icon="fas fa-solid fa-rocket" type="link">
+          <Button icon={<i className="fas fa-solid fa-rocket"></i>} type="link">
             View Rankings
           </Button>
         </div>

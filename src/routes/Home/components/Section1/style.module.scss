@@ -30,13 +30,16 @@
 
       .sales {
         display: flex;
-        gap: 30px;
+        gap: 50px;
+        @media (max-width: 450px) {
+          flex-direction: column;
+        }
       }
     }
-    .card {
-      height: 500px;
-      @media (max-width: 924px) {
-        height: 450px;
+    .card_wrap {
+      display: flex;
+      justify-content: center;
+      .card {
       }
     }
   }

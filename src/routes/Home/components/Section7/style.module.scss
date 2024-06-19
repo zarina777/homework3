@@ -1,0 +1,21 @@
+.section7 {
+  padding: 50px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .cards_wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      @media (max-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

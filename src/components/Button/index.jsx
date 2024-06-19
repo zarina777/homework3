@@ -21,7 +21,7 @@ function Button(props) {
           : ""
       )}
     >
-      {icon ? <i className={icon}></i> : ""}{" "}
+      {icon ? icon : ""}
       <P
         color={
           type == "link"

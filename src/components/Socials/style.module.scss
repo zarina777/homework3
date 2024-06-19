@@ -1,0 +1,16 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  a {
+    i {
+      color: rgba(133, 133, 132, 1);
+      font-size: 28px;
+      font-weight: 700;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

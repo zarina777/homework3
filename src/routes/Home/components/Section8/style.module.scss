@@ -1,0 +1,45 @@
+.section8 {
+  padding: 50px 0 70px;
+  .container {
+    border-radius: 20px;
+    background-color: rgba(59, 59, 59, 1);
+    padding: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    justify-content: center;
+    img {
+      aspect-ratio: 2/1.4;
+    }
+    @media (max-width: 1040px) {
+      padding: 40px 20px;
+      gap: 30px;
+    }
+    @media (max-width: 860px) {
+      background-color: transparent;
+      padding: 40px;
+      grid-template-columns: 1fr;
+    }
+    .infoPart {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h2 {
+          @media (max-width: 450px) {
+            font-size: 30px;
+          }
+        }
+		p{
+			@media (max-width: 450px) {
+				font-size: 18px!important;
+			  }
+		}
+      }
+    }
+  }
+}

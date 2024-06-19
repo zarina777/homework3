@@ -1,4 +1,4 @@
-import { H3, H5, P } from "../../../../../components/Typography";
+import { H3, H5 } from "../../../../../components/Typography";
 import cn from "./style.module.scss";
 
 function Heading(props) {

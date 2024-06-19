@@ -5,8 +5,19 @@
   align-items: center;
   gap: 20px;
   aspect-ratio: 1/1;
-  height: 240px;
+  min-height: 240px;
   position: relative;
+  @media (max-width: 830px) {
+    flex-direction: row;
+    aspect-ratio: auto;
+    min-height: 110px;
+    .img {
+      max-width: 60px;
+    }
+  }
+  @media (max-width: 350px) {
+    gap: 10px;
+  }
   .number {
     position: absolute;
     top: 20px;
@@ -18,11 +29,21 @@
     align-items: center;
     border-radius: 50%;
     background-color: rgba(43, 43, 43, 1);
+    @media (max-width: 830px) {
+      top: 14px;
+      left: 14px;
+      width: 25px;
+      font-size: 13px;
+    }
   }
   .info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 830px) {
+      gap: 5px;
+      align-items: flex-start;
+    }
     .subinfo {
       display: flex;
       justify-content: center;

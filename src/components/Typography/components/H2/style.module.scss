@@ -1,0 +1,17 @@
+.h2 {
+  font-size: 51px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  @media (max-width: 1200px) {
+    font-size: 40px;
+  }
+  @media (max-width: 1100px) {
+    font-size: 38px;
+  }
+}
+.work {
+  font-family: "Work Sans", sans-serif;
+}
+.mono {
+  font-family: "Space Mono", monospace;
+}

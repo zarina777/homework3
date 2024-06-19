@@ -1,7 +1,6 @@
 .sale {
   display: flex;
   flex-direction: column;
-  width: 150px;
   @media (max-width: 890px) {
     justify-content: center;
     align-items: center;

@@ -34,7 +34,7 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <Button color="red" sidepadding="30" icon="fa-solid fa-rocket">
+            <Button color="red" sidepadding="30" icon={<i className="fa-solid fa-rocket"></i>}>
               Sign Up
             </Button>
           </li>

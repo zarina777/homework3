@@ -1,0 +1,12 @@
+.Tag {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(59, 59, 59, 1);
+  display: inline-block;
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}

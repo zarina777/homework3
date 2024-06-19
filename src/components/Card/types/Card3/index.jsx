@@ -11,7 +11,7 @@ function Card3(props) {
       <P color="rgba(133, 133, 132, 1)" className={cn.number} fontFamily="mono">
         1
       </P>
-      <ImgC src={imgSrc} />
+      <ImgC className={cn.img} src={imgSrc} />
       <div className={cn.info}>
         <H5 fontweight={600}>{name}</H5>
         <div className={cn.subinfo}>

@@ -21,23 +21,22 @@ function Section1() {
             NFT marketplace UI created with Anima for Figma. Collect, buy and
             sell art from more than 20k NFT artists.
           </H5>
-          <Button icon="fa-solid fa-rocket">Get Started</Button>
+          <Button icon={<i className="fa-solid fa-rocket"></i>}>Get Started</Button>
           <div className={cn.sales}>
             {salesInfo.map((el) => (
               <Sale key={uuid()} sum={el.sum} name={el.name} />
             ))}
-            {/* <Sale sum={240} name="Total sale" />
-            <Sale sum={240} name="Total sale" />
-            <Sale sum={240} name="Total sale" /> */}
           </div>
         </div>
-        <Card1
-          className="card"
-          imgSrc="cosmos.png"
-          circleImgSrc="avatar.png"
-          title="Space Walking"
-          subtitle="Animakid"
-        />
+        <div className={cn.card_wrap}>
+          <Card1
+            className={cn.card}
+            imgSrc="cosmos.png"
+            circleImgSrc="avatar.png"
+            title="Space Walking"
+            subtitle="Animakid"
+          />
+        </div>
       </Container>
     </div>
   );
